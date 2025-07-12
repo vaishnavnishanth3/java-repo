@@ -1,0 +1,127 @@
+Eclipse Workspace and Project Creation:
+
+Project > Package > class (default void main)
+
+1. Collection of interface / class is called package
+2. Package is a logical grouping of related classes and interfaces
+3. Package is used to organize classes and interfaces into namespaces
+4. Package is used to avoid name conflicts
+5. Package is used to access classes and interfaces from other packages
+6. Package is used to control access to classes and interfaces
+7. Package is used to create reusable code
+8. Package is used to create modular code
+9. Package is used to create scalable code
+10. Package is used to create maintainable code
+
+Package declaration:
+
+package com.example.myapp;
+
+Package import:
+
+import com.example.myapp.*;
+
+Package access modifiers:
+
+public class className { //should not use private / protected for classnames
+
+}
+
+Access modifiers:
+Access modifiers (visibility of a member): can be used only for 
+    1. variables (static & non-static) (not possible for local variables), 
+    2. methods (static & non-static) and 
+    3. classes (static & non-static)
+
+public: accessible from anywhere in the project
+private: accessible only within the same class
+protected: accessible within the same package and subclasses (only in inheritance)
+default: accessible only  within the same package
+
+
+Non static: 
+to access a non-static variable (create an object and access through that)
+
+Example: 
+
+package DemoPackage;
+
+public class Index {
+
+	int a = 10;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Index obj = new Index();
+		System.out.println("A value: " + obj.a);
+	}
+}
+
+Static:
+to access a static variable (access directly through the class name)
+outside the method within the class
+can be used anywhere in the class
+
+Non-static:
+object creation and accessing through object
+
+local variable:
+outside the method is not possible to access
+
+Example:
+
+package DemoPackage;
+
+public class Index {
+
+	static int a = 10;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("A value: " + Index.a);
+	}
+}
+
+Package naming conventions:
+
+1. Package names should be all lowercase
+2. Package names should be unique
+3. Package names should be short and descriptive
+4. Package names should be consistent across all projects
+5. Package names should be easy to remember
+6. Package names should be easy to type
+7. Package names should be easy to read
+8. Package names should be easy to understand
+9. Package names should be easy to search
+10. Package names should be easy to find
+
+
+public / private / protected / default - access modifier
+static / abstract / final / syncronize - modifier
+class / interface / enum / annotation - class type
+int / float / double / char / boolean / byte / short / long / void - data type
+primitive datatype - non-decimal (byte, short, int, long), decimal (float, double), boolean, character
+object / class / string / Array / ArrayList - non primitive
+
+declared (non-defined) static variables will be 0(primitive), null (non-primitive), space for character at default
+
+control statements: 
+
+1. decision making
+if
+if-else
+else if ladder
+nested if
+
+2. selection
+switch
+default
+break
+continue
+
+3. looping
+for
+while
+do-while
+break
+continue
+return
+
